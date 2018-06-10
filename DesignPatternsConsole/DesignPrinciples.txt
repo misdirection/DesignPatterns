@@ -1,3 +1,6 @@
 ﻿
 #1 Identifizieren Sie die Aspekte Ihrer Anwendung, die sich ändern können, und trennen Sie sie von denen, die konstant bleiben.
 #2 Programmieren Sie auf eine Schnittstelle, nicht auf eine Implementierung.
+#3 Streben Sie bei Entwürfen mit interagierenden Objekten nach lockerer Kopplung.
+#4 Ziehen Sie Komposition der Vererbung vor.
+#5 Klassen sollten für Erweiterung offen, aber für Veränderung geschlossen sein. (Siehe SOLID.txt "Open-Closed-Prinzip")

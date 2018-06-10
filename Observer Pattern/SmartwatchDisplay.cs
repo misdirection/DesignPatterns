@@ -7,20 +7,14 @@ namespace Observer_Pattern
         private ISubject _subject;
         private string _title;
         private DateTime _date;
-        public SmartwatchDisplay(ISubject subject)
-        {
-            _subject = subject;
-        }
 
+        public SmartwatchDisplay(ISubject subject) => _subject = subject;
         public void Update(string title, DateTime dateTime)
         {
             _title = title;
             _date = dateTime;
             Display();
         }
-        public void Display()
-        {
-            Console.WriteLine("News of the day. Title: " + _title + " Date: " + _date);
-        }
+        public void Display() => Console.WriteLine("News of the day. Title: " + _title + " Date: " + _date);
     }
 }

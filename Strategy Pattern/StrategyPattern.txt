@@ -1,0 +1,13 @@
+﻿
+
+----------------------------------------------------STRATEGY PATTERN-----------------------------------------------------
+
+Das Strategy-Pattern definiert eine Familie von Algorithmen, 
+kapselt sie einzeln und macht sie austauschbar. Das Strategy-Pattern ermöglicht es,
+den Algorithmus unabhängig von den Clients die ihn einsetzen, variieren zu lassen.
+
+
+Das Beispiel ist an ein Spiel mit einem Klassensystem (Schwertkämpfer/Bogenschütze) angelehnt. Um die Waffen und deren Verhalten lose zu koppeln,
+implementieren die Waffen das Interface IWeaponBehaviour. Die Basisklasse hält eine Instanz des IWeaponbehaviour. Bei der Instanziierung wird der Person
+ein Waffenverhalten mitgegeben. Dies kann auch zur Laufzeit verändert werden. Außerdem können beliebig viele Waffenverhalten oder Klassen hinzugefügt werden
+ohne den Code des jeweils anderen zu beeinflussen.

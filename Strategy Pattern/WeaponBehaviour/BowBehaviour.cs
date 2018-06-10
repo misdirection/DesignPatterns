@@ -4,9 +4,6 @@ namespace Strategy_Pattern
 {
     public class BowBehaviour : IWeaponBehaviour
     {
-        public void UseWeapon()
-        {
-            Console.WriteLine("Shooting an arrow!");
-        }
+        public void UseWeapon() => Console.WriteLine("Shooting an arrow!");
     }
 }

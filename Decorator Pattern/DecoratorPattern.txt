@@ -1,0 +1,9 @@
+﻿
+
+----------------------------------------------------DECORATOR PATTERN-----------------------------------------------------
+
+Das Decorator-Pattern fügt einem Objekt dynamisch zusätzliche Verantwortlichkeiten hinzu. Dekorierer bieten eine flexible
+Alternative zur Ableitung von Unterklassen zum Zweck der Erweiterung der Funktionalität.
+
+Das Beispiel zeigt 2 Spiele des bekannten Spieleentwicklers DungieGames. Diese können mit Hilfe des Decorator Patterns durch DLCs erweitert werden. Hierbei ist es wichtig, dass die Decorator(DLC)
+von der gleichen Basisklasse erben wie die Spiele selbst. Basiskomponenten(Spiele) und Decorator(DLC) lassen sich hier beliebig mischen(Komposition) um das gewünschte Verhalten zu erlangen.

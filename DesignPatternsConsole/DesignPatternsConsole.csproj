@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Decorator Pattern\Decorator Pattern.csproj" />
     <ProjectReference Include="..\Observer Pattern\Observer Pattern.csproj" />
     <ProjectReference Include="..\Strategy Pattern\Strategy Pattern.csproj" />
   </ItemGroup>

@@ -4,3 +4,11 @@
 
 Das Observer-Pattern definiert eine Eins-zu-viele-Abhängigkeit zwischen Objekten in der Art, 
 dass alle abhängigen Objekte benachrichtigt werden, wenn sich der Zustand des einen Objekts ändert.
+
+Das Beispiel zeigt, wie eine Smartwatch ein Newsticker abonniert um aktuelle News zu erhalten, sobald der Newsticker neue News bekommt. 
+Der Newsticker hält eine Liste aller Abonennten und benachrichtigt diese, sobald Neuigkeiten eintreffen.
+
+Verwandte Themen:
+
+- Delegaten und Events
+- INotifyPropertyChanged

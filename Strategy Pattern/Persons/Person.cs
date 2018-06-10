@@ -9,9 +9,6 @@ namespace Strategy_Pattern
 
         protected Person(IWeaponBehaviour weaponBehaviour) => _weaponBehaviour = weaponBehaviour;
         public void SetWeapon(IWeaponBehaviour weaponBehaviour) => _weaponBehaviour = weaponBehaviour;
-        public void Fight()
-        {
-            _weaponBehaviour.UseWeapon();
-        }
+        public void Fight() => _weaponBehaviour.UseWeapon();
     }
 }

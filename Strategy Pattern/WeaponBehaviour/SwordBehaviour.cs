@@ -8,9 +8,6 @@ namespace Strategy_Pattern
 {
     public class SwordBehaviour : IWeaponBehaviour
     {
-        public void UseWeapon()
-        {
-            Console.WriteLine("Swinging the sword!");
-        }
+        public void UseWeapon() => Console.WriteLine("Swinging the sword!");
     }
 }

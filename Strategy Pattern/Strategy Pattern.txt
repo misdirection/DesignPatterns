@@ -1,7 +1,0 @@
-﻿
-
-----------------------------------------------------STRATEGY PATTERN-----------------------------------------------------
-
-Das Strategy-Pattern definiert eine Familie von Algorithmen, 
-kapselt sie einzeln und macht sie austauschbar. Das Strategy-Pattern ermöglicht es,
-den Algorithmus unabhängig von den Clients die ihn einsetzen, variiren zu lassen.
