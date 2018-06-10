@@ -1,0 +1,6 @@
+﻿
+
+----------------------------------------------------OBSERVER PATTERN-----------------------------------------------------
+
+Das Observer-Pattern definiert eine Eins-zu-viele-Abhängigkeit zwischen Objekten in der Art, 
+dass alle abhängigen Objekte benachrichtigt werden, wenn sich der Zustand des einen Objekts ändert.

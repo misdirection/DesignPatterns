@@ -1,0 +1,3 @@
+﻿
+#1 Identifizieren Sie die Aspekte Ihrer Anwendung, die sich ändern können, und trennen Sie sie von denen, die konstant bleiben.
+#2 Programmieren Sie auf eine Schnittstelle, nicht auf eine Implementierung.
