@@ -1,0 +1,9 @@
+﻿
+
+----------------------------------------------------SINGLETON PATTERN-----------------------------------------------------
+
+Das Singleton-Pattern sichert, dass es nur eine Instanz einer Klasse gibt, und bietet einen globalen Zugriffspunkt für diese Instanz.
+
+Die Klasse in dem Beispiel hat einen privaten Konstruktor, damit dieser von außen nicht aufgerufen werden kann, um eine Instanz der Klasse zu erstellen.
+Die statische Funktion CreateInstance() überprüft, ob bereits eine Instanz von BasicSingleton existiert. Ist diese nicht der Fall, erstellt CreateInstance()
+eine (und die einzige) Instanz von BasicSingleton.

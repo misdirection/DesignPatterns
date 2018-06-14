@@ -1,0 +1,6 @@
+﻿
+
+----------------------------------------------------ABSTRACT FACTORY PATTERN-----------------------------------------------------
+
+Das Abstract Factory Pattern bietet eine Schnittstelle zum Erstellen von Familien verwandter oder zusammenhängender
+Objekte an, ohne knokrete Klassen anzugeben.

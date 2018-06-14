@@ -1,0 +1,6 @@
+﻿
+
+----------------------------------------------------FACTORY METHOD PATTERN-----------------------------------------------------
+
+Das Factory Method Pattern definiert eine Schnittstelle zur Erstellung eines Objekts, lässt aber die Unterklassen entscheiden,
+welche Klassen instantiiert werden. Factory Method ermöglicht einer Klasse, die Instantiierung in UNterklassen zu verlagern.

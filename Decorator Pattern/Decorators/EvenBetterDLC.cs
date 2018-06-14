@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Decorator_Pattern
+﻿namespace Decorator_Pattern
 {
     public class EvenBetterDLC : DlcDecorator
     {
