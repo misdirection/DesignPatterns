@@ -5,7 +5,6 @@
         public string Text { get; set; }
 
         private static BasicSingleton _createInstance = null;
-        public int Value { get; set; }
         private BasicSingleton()
         {
             Text = "I AM SINGLETON!";
