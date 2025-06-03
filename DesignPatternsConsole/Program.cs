@@ -18,13 +18,13 @@ namespace DesignPatternsConsole
             Console.WriteLine("The swordsman is:");
             swordsman.Fight();
             Console.WriteLine();
-            Person bowman = new Bowman(new BowBehaviour());
-            Console.WriteLine("The bowman is:");
-            bowman.Fight();
+            Person archer = new Archer(new BowBehaviour());
+            Console.WriteLine("The archer is:");
+            archer.Fight();
             Console.WriteLine();
-            bowman.SetWeapon(new KnifeBehaviour());
-            Console.WriteLine("The bowman is:");
-            bowman.Fight();
+            archer.SetWeapon(new KnifeBehaviour());
+            Console.WriteLine("The archer is:");
+            archer.Fight();
             Console.WriteLine();
             Console.WriteLine("______________________________________________________________________________");
 
