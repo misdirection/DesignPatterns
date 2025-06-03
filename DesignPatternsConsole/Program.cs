@@ -4,6 +4,7 @@ using Decorator_Pattern;
 using Singleton_Pattern;
 using Factory_Method_Pattern;
 using Abstract_Factory_Pattern;
+using Adapter_Pattern;
 using System;
 namespace DesignPatternsConsole
 {
@@ -76,6 +77,12 @@ namespace DesignPatternsConsole
             Console.WriteLine("Output for singleton pattern: \n");
             BasicSingleton basicSingleton = BasicSingleton.CreateInstance;
             Console.WriteLine(basicSingleton.Text);
+
+            /*Adapter Pattern*/
+            Console.WriteLine("______________________________________________________________");
+            Console.WriteLine("Output for adapter pattern: \n");
+            ITarget target = new Adapter(new Adaptee());
+            Console.WriteLine(target.Request());
             
 
             Console.ReadLine();
