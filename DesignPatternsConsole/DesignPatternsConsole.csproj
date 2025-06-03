@@ -12,6 +12,9 @@
     <ProjectReference Include="..\Observer Pattern\Observer Pattern.csproj" />
     <ProjectReference Include="..\Singleton Pattern\Singleton Pattern.csproj" />
     <ProjectReference Include="..\Strategy Pattern\Strategy Pattern.csproj" />
+    <ProjectReference Include="..\Builder Pattern\Builder Pattern.csproj" />
+    <ProjectReference Include="..\Adapter Pattern\Adapter Pattern.csproj" />
+    <ProjectReference Include="..\Command Pattern\Command Pattern.csproj" />
   </ItemGroup>
 
 </Project>

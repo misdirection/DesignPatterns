@@ -1,0 +1,17 @@
+The Adapter Pattern converts the interface of a class into another interface clients expect.
+Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
+
+Key Components:
+- Target (ITarget): Defines the domain-specific interface that Client uses.
+- Client: Collaborates with objects conforming to the Target interface.
+- Adaptee: Defines an existing interface that needs adapting. This is the class that has the functionality the client wants, but with an incompatible interface.
+- Adapter: Adapts the interface of Adaptee to the Target interface. It holds an instance of the Adaptee and translates calls from the Target interface to calls on the Adaptee.
+
+There are two main types:
+1. Object Adapter: Uses composition. The Adapter contains an instance of the Adaptee. (This example is an Object Adapter).
+2. Class Adapter: Uses multiple inheritance (not directly possible in C# with classes, but can be simulated with interfaces). The Adapter inherits from both the Target interface and the Adaptee class.
+
+When to use:
+- When you want to use an existing class, and its interface does not match the one you need.
+- When you want to create a reusable class that cooperates with unrelated or unforeseen classes, that is, classes that don't necessarily have compatible interfaces.
+- (Object adapter) when you want to use several existing subclasses, but it's impractical to adapt their interface by subclassing every one. An object adapter can adapt the interface of its parent class.

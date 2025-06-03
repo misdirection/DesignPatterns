@@ -1,0 +1,12 @@
+The Builder Pattern separates the construction of a complex object from its representation so that the same construction process can create different representations.
+
+Key Components:
+- Product: The complex object that is being built.
+- IBuilder: An interface that defines the steps to build the parts of the Product.
+- ConcreteBuilder: Implements the IBuilder interface and constructs and assembles parts of the product. It also provides a method to retrieve the built Product.
+- Director: Constructs an object using the IBuilder interface. The Director is not directly responsible for creating parts but rather delegates this to a ConcreteBuilder. It defines the order in which to execute building steps.
+
+When to use:
+- When the algorithm for creating a complex object should be independent of the parts that make up the object and how they're assembled.
+- When the construction process must allow different representations for the object that's constructed.
+- To isolate the code for construction and representation.

@@ -1,0 +1,15 @@
+The Command Pattern encapsulates a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.
+
+Key Components:
+- ICommand: Declares an interface for executing an operation. May also include an Undo operation.
+- ConcreteCommand: Implements the ICommand interface and defines a binding between a Receiver object and an action. It stores the Receiver and any parameters required to call the Receiver's method.
+- Client (not explicitly shown in this simple structure, but it's what creates ConcreteCommands): Creates a ConcreteCommand object and sets its Receiver.
+- Invoker: Asks the command to carry out the request. It holds a command object and at some point calls its Execute method.
+- Receiver: Knows how to perform the operations associated with carrying out a request. Any class may serve as a Receiver.
+
+When to use:
+- To parameterize objects by an action to perform.
+- To specify, queue, and execute requests at different times.
+- To support undo. The Command's Execute operation can store state for reversing its effects in the command itself.
+- To support logging changes. You can use the Command's Execute operation to store a log of changes, which can be used for recovery or audit.
+- To structure a system around high-level operations built on primitive operations.
