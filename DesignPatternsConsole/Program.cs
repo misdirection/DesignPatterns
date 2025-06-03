@@ -5,10 +5,59 @@ using Singleton_Pattern;
 using Factory_Method_Pattern;
 using Abstract_Factory_Pattern;
 using System;
+using BuilderPattern;
+using AdapterPattern;
+using CommandPattern;
 namespace DesignPatternsConsole
 {
     class Program
     {
+        public static void DemonstrateBuilderPattern()
+        {
+            Console.WriteLine("\n--- Builder Pattern Demonstration ---");
+            var director = new BuilderPattern.Director();
+
+            var builder1 = new BuilderPattern.ConcreteBuilder1();
+            director.Construct(builder1);
+            BuilderPattern.Product product1 = builder1.GetProduct();
+            product1.ShowParts();
+
+            var builder2 = new BuilderPattern.ConcreteBuilder2();
+            director.ConstructVariant(builder2); // Using a variant construction
+            BuilderPattern.Product product2 = builder2.GetProduct();
+            product2.ShowParts();
+            Console.WriteLine("-----------------------------------");
+        }
+
+        public static void DemonstrateAdapterPattern()
+        {
+            Console.WriteLine("\n--- Adapter Pattern Demonstration ---");
+            AdapterPattern.Adaptee adaptee = new AdapterPattern.Adaptee();
+            AdapterPattern.ITarget target = new AdapterPattern.Adapter(adaptee);
+            var client = new AdapterPattern.Client();
+            client.MakeRequest(target);
+            Console.WriteLine("-----------------------------------");
+        }
+
+        public static void DemonstrateCommandPattern()
+        {
+            Console.WriteLine("\n--- Command Pattern Demonstration ---");
+            CommandPattern.Receiver receiver = new CommandPattern.Receiver();
+            CommandPattern.ICommand command1 = new CommandPattern.ConcreteCommand(receiver, "Action A");
+            CommandPattern.ICommand command2 = new CommandPattern.ConcreteCommand(receiver, "Action B");
+
+            CommandPattern.Invoker invoker = new CommandPattern.Invoker();
+            invoker.SetOnStart(command1);
+            invoker.SetOnFinish(command2);
+
+            invoker.DoSomethingImportant();
+
+            Console.WriteLine("\nUndoing last two commands:");
+            invoker.UndoLastCommand(); // Undo command2
+            invoker.UndoLastCommand(); // Undo command1
+            invoker.UndoLastCommand(); // Try to undo with no history
+            Console.WriteLine("-----------------------------------");
+        }
         static void Main(string[] args)
         {
 
@@ -77,6 +126,9 @@ namespace DesignPatternsConsole
             BasicSingleton basicSingleton = BasicSingleton.CreateInstance;
             Console.WriteLine(basicSingleton.Text);
             
+            Program.DemonstrateBuilderPattern();
+            Program.DemonstrateAdapterPattern();
+            Program.DemonstrateCommandPattern();
 
             Console.ReadLine();
         }
