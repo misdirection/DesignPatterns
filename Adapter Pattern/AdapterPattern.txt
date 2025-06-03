@@ -1,0 +1,7 @@
+
+----------------------------------------------------ADAPTER PATTERN-----------------------------------------
+
+Das Adapter-Pattern ermöglicht die Zusammenarbeit inkompatibler Schnittstellen. 
+Ein Adapter übersetzt die Anfragen eines Clients in Aufrufe auf eine vorhandene Klasse. 
+Im Beispiel wird eine bestehende Klasse (Adaptee) durch einen Adapter so angepasst, dass sie 
+über das Target-Interface genutzt werden kann.
